@@ -7,6 +7,8 @@ const { route } = require("../app");
 
 router.get("/", controller.get);
 router.get("/:slug", controller.getBySlug);
+router.get("/admin/:id", controller.getById);
+router.get("/tags/:tag", controller.getByTag);
 
 router.post("/", controller.post);
 
